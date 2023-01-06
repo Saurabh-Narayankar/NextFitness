@@ -13,7 +13,7 @@ const ExerciseHomepage = () => {
 
     useEffect(() => {
         const getExerciseForFirstTime = async () => {
-            let abductors = await fetch(`http://localhost:3000/api/exercise/abductors`)
+            let abductors = await fetch(`https://next-fitness.vercel.app/api/exercise/abductors`)
             abductors = await abductors.json()
             setExercises(abductors.filteredExercise)
         }
@@ -25,7 +25,7 @@ const ExerciseHomepage = () => {
     }
 
     const exerciseSelector = async (event) => {
-        let filterExercise = await fetch(`http://localhost:3000/api/exercise/${event.target.value}`)
+        let filterExercise = await fetch(`https://next-fitness.vercel.app/api/exercise/${event.target.value}`)
         filterExercise = await filterExercise.json()
         setExercises(filterExercise.filteredExercise)
     }
