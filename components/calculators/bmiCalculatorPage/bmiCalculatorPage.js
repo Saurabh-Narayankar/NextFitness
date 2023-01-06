@@ -100,9 +100,9 @@ const BmiCalculatorPage = () => {
             <h1>BMI Calculator</h1>
             <div className={classes.BmiCalculatorPageInnerContainer}>
                 <div className={classes.BMIDescription}>
-                    <p>BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.</p>
+                    <p>BMI is a measurement of a persons leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required. Refer to the table below to see the different categories based on BMI that are used by the calculator.</p>
                     <br></br>
-                    <p>The Body Mass Index (BMI) Calculator can be used to calculate BMI value and corresponding weight status while taking age into consideration. Use the "Metric Units" tab for the International System of Units or the "US Units" tab for pound/ft-inches units.</p>
+                    <p>The Body Mass Index (BMI) Calculator can be used to calculate BMI value and corresponding weight status while taking age into consideration. Use the Metric Units tab for the International System of Units or the US Units tab for pound/ft-inches units.</p>
                 </div>
                 <div className={classes.bmiTableAndAverageValues}>
                     {bmiData.isSubmitted ? (
@@ -115,8 +115,8 @@ const BmiCalculatorPage = () => {
                                         NOTE: For Children and Teens having age less than 18 follow the chart given below for exact BMI percentile range
                                     </p>
                                     <div className={classes.chartsForChildrenAndTeens}>
-                                        <p>chart for boys : <a href='https://drive.google.com/file/d/1gd377gMsSrIKGag2KeURTBm3E5VS_3Wo/view?usp=share_link' target='_blank'>Click here <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm' /></a></p>
-                                        <p>chart for girls : <a href='https://drive.google.com/file/d/1_Xr-qi4htH7zEsqE7Q9JyU_-I-EJkYhe/view?usp=share_link' target='_blank'>Click here <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm' /></a></p>
+                                        <p>chart for boys : <a href='https://drive.google.com/file/d/1gd377gMsSrIKGag2KeURTBm3E5VS_3Wo/view?usp=share_link' rel='noreferrer' target='_blank'>Click here <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm' /></a></p>
+                                        <p>chart for girls : <a href='https://drive.google.com/file/d/1_Xr-qi4htH7zEsqE7Q9JyU_-I-EJkYhe/view?usp=share_link' rel='noreferrer' target='_blank'>Click here <FontAwesomeIcon icon={faArrowUpRightFromSquare} size='sm' /></a></p>
                                     </div>
                                 </div>
                                 <div className={classes.outputOfBmiBottom}>
@@ -275,7 +275,7 @@ const BmiCalculatorPage = () => {
                         <p>Being overweight has its associated risks listed below according to the Centers for Disease Control and Prevention (CDC):</p>
                         <ul>
                             <li>High blood pressure</li>
-                            <li>Higher levels of LDL cholesterol, which is widely considered "bad cholesterol," lower levels of HDL cholesterol, considered to be good cholesterol in moderation, and high levels of triglycerides</li>
+                            <li>Higher levels of LDL cholesterol, which is widely considered bad cholesterol, lower levels of HDL cholesterol, considered to be good cholesterol in moderation, and high levels of triglycerides</li>
                             <li>Type II diabetes</li>
                             <li>Coronary heart disease</li>
                             <li>Stroke</li>
@@ -295,7 +295,7 @@ const BmiCalculatorPage = () => {
                             <li>Growth and development issues, particularly in children and teenagers</li>
                             <li>Possible reproductive issues for women due to hormonal imbalances that can disrupt the menstrual cycle. Underweight women also have a higher chance of miscarriage in the first trimester</li>
                             <li>Potential complications as a result of surgery</li>
-                            <li>Generally, an increased risk of mortality compared to those with a healthy BMI</li>
+                            <li>Generally an increased risk of mortality compared to those with a healthy BMI</li>
                             <li>Weakness</li>
                         </ul>
                     </div>
