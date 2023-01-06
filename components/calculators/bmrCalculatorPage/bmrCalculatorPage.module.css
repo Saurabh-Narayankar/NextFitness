@@ -1,0 +1,333 @@
+.BmrCalculatorPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.BmrCalculatorPageContainer p {
+    word-spacing: 0.3rem;
+}
+
+.BmrCalculatorPageContainer h1 {
+    background-color: #9D0B28;
+    margin-top: 2rem;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.BmrCalculatorPageInnerContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 80%;
+}
+
+.BMRDescription {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.bmrTableAndAverageValues {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.bmrTableOuter {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outputOfBmr {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outputOfBmr h3 {
+    margin-top: 0.5rem;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.outputOfBmrTop {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+}
+
+.chartsForChildrenAndTeens {
+    display: flex;
+    flex-direction: column;
+}
+
+.outputOfBmrBottom {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.outputOfBmrBottom button {
+    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+    width: 100%;
+    height: 3rem;
+}
+
+.outputOfBmrBottom button:hover {
+    background-color: #4b0615;
+    transition: 400ms;
+}
+
+.bmrTableToggle {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.bmrTableToggle button {
+    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 60%;
+    height: 3rem;
+}
+
+.bmrTableToggle button:hover {
+    background-color: #4b0615;
+    transition: 400ms;
+}
+
+.bmrTableQuantities {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    width: 90%;
+    height: auto;
+}
+
+.bmrTableQuantities fieldset .innerHeight {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.bmrTableQuantities button {
+    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+    width: 100%;
+    height: 3rem;
+}
+
+.bmrTableQuantities button:hover {
+    background-color: #4b0615;
+    transition: 400ms;
+}
+
+.bmrTableQuantities input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.bmrTableQuantities select {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.bmrTableQuantities legend {
+    padding: 10px;
+}
+
+.bmrEquations {
+    padding: 1.2rem;
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.bmrEquations > p {
+    text-align: center;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.bmrEquations .bmrCalFormulaTitle {
+    border: 1px solid rgb(100, 100, 100);
+    width: 100%;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.bmrEquations .bmrCalFormula {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    width: 100%;
+    justify-content: left;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.bmrEquations .bmrCalFormula p {
+    text-align: center;
+}
+
+.risks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.overweightRisk {
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.overweightRisk p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.overweightRisk ul {
+    padding: 1rem;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    height: auto;
+}
+
+.overweightRisk li {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    word-spacing: 0.2rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .BmrCalculatorPageInnerContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .bmrTableOuter {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bmrTableToggle {
+        height: 20%;
+    }
+
+    .bmrTableToggle button {
+        width: 100%;
+        height: 2rem;
+    }
+
+    .bmrAverageValues {
+        padding: 1.5rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outputOfBmr {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outputOfBmrTop {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .bmrEquations {
+        padding: 1.2rem;
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
+}

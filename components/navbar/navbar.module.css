@@ -1,0 +1,37 @@
+.navbarContainer .topNavbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FF004D;
+    padding: 1rem 2rem;
+}
+
+.navbarContainer .bottomNavbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #9D0B28;
+    padding: 0.6rem 2rem;
+}
+
+.navbarContainer .topNavbar h1 {
+    word-spacing: 0.4rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.navbarContainer .bottomNavbar h1 {
+    word-spacing: 0.4rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.navbarContainer .topNavbar p {
+    font-size: 1.2rem;
+}
+
+.navbarContainer .bottomNavbar p {
+    font-size: 1rem;
+}

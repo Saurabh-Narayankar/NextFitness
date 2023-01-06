@@ -1,0 +1,408 @@
+.calorieIntakeCalculatorPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.calorieIntakeCalculatorPageContainer p {
+    word-spacing: 0.3rem;
+}
+
+.calorieIntakeCalculatorPageContainer h1 {
+    background-color: #9D0B28;
+    margin-top: 2rem;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.calorieIntakeCalculatorPageInnerContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 80%;
+}
+
+.calorieIntakeDescription {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.calorieIntakeTableAndAverageValues {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.calorieIntakeTableOuter {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outputOfCalorieIntake {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outputOfCalorieIntake h3 {
+    margin-top: 0.5rem;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.outputOfCalorieIntakeTop {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
+}
+
+.outputOfCalorieIntakeTop .calorieIntakeZigZagPattern {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.outputOfCalorieIntakeTop .calorieIntakeZigZagPattern p {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+.outputOfCalorieIntakeBottom {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.outputOfCalorieIntakeBottom button {
+    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+    width: 100%;
+    height: 3rem;
+}
+
+.outputOfCalorieIntakeBottom button:hover {
+    background-color: #4b0615;
+    transition: 400ms;
+}
+
+.calorieIntakeTableToggle {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.calorieIntakeTableToggle button {
+    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 60%;
+    height: 3rem;
+}
+
+.calorieIntakeTableToggle button:hover {
+    background-color: #4b0615;
+    transition: 400ms;
+}
+
+.calorieIntakeTableQuantities {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    width: 90%;
+    height: auto;
+}
+
+.calorieIntakeTableQuantities fieldset .innerHeight {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.calorieIntakeTableQuantities button {
+    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+    width: 100%;
+    height: 3rem;
+}
+
+.calorieIntakeTableQuantities button:hover {
+    background-color: #4b0615;
+    transition: 400ms;
+}
+
+.calorieIntakeTableQuantities input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.calorieIntakeTableQuantities select {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.calorieIntakeTableQuantities legend {
+    padding: 10px;
+}
+
+.calorieIntakeRange, .calorieIntakeZigZagPattern {
+    padding: 1.2rem;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.calorieIntakeRange table, .calorieIntakeZigZagPattern table {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.calorieIntakeRange th,.calorieIntakeRange td, .calorieIntakeZigZagPattern th, .calorieIntakeZigZagPattern td {
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.calorieIntakeRange td, .calorieIntakeZigZagPattern td {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.calorieIntakeZigZagPattern td {
+    text-align: center;
+}
+
+.calorieIntakeEquations {
+    padding: 1.2rem;
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.calorieIntakeEquations > p {
+    text-align: center;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.calorieIntakeEquations .calorieIntakeCalFormulaTitle {
+    border: 1px solid rgb(100, 100, 100);
+    width: 100%;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    
+}
+
+.calorieIntakeEquations .calorieIntakeCalFormula {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: left;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.calorieIntakeEquations .calorieIntakeCalFormula p {
+    text-align: center;
+}
+
+.risks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.calorie {
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.calorie .calorieTitle {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.calorie .calorieDescription {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.calorieDescription p {
+    margin-bottom: 1rem;
+}
+
+.calorieTable {
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.calorieTableTitle {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.calorieTableDescription {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.calorieTableDescription Table {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.calorieTableDescription th, .calorieTableDescription td {
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.calorieTableDescription td {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .calorieIntakeCalculatorPageInnerContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .calorieIntakeTableOuter {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .calorieIntakeTableToggle {
+        height: 20%;
+    }
+
+    .calorieIntakeTableToggle button {
+        width: 100%;
+        height: 2rem;
+    }
+
+    .calorieIntakeEquations {
+        padding: 1.5rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outputOfCalorieIntake {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outputOfCalorieIntakeTop {
+        display: flex;
+        gap: 2rem;
+    }
+}

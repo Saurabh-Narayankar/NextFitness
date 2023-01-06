@@ -1,0 +1,386 @@
+.bodyFatCalculatorPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.bodyFatCalculatorPageContainer p {
+    word-spacing: 0.3rem;
+}
+
+.bodyFatCalculatorPageContainer h1 {
+    background-color: #9D0B28;
+    margin-top: 2rem;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.bodyFatCalculatorPageInnerContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 80%;
+}
+
+.bodyFatDescription {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.bodyFatTableAndAverageValues {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.bodyFatTableOuter {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outputOfBodyFat {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outputOfBodyFat h3 {
+    margin-top: 0.5rem;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.outputOfBodyFatTop {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+}
+
+.outputOfBodyFatTopSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.outputOfBodyFatBottom {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.outputOfBodyFatBottom button {
+    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+    width: 100%;
+    height: 3rem;
+}
+
+.outputOfBodyFatBottom button:hover {
+    background-color: #4b0615;
+    transition: 400ms;
+}
+
+.bodyFatTableToggle {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.bodyFatTableToggle button {
+    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 60%;
+    height: 3rem;
+}
+
+.bodyFatTableToggle button:hover {
+    background-color: #4b0615;
+    transition: 400ms;
+}
+
+.bodyFatTableQuantities {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    width: 90%;
+    height: auto;
+}
+
+.bodyFatTableQuantities fieldset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bodyFatTableQuantities fieldset .innerHeight {
+    width: 50%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.bodyFatTableQuantities button {
+    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+    width: 100%;
+    height: 3rem;
+}
+
+.bodyFatTableQuantities button:hover {
+    background-color: #4b0615;
+    transition: 400ms;
+}
+
+.bodyFatTableQuantities input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.bodyFatTableQuantities select {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.bodyFatTableQuantities legend {
+    padding: 10px;
+}
+
+.bodyFatAverageValues {
+    padding: 1.2rem;
+    width: 50%;
+    display: flex;
+    gap: 8rem;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.bodyFatAverageValues p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.bodyFatAverageValues .averageForMen {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.bodyFatAverageValues .averageForChild {
+    width: 100%;
+    height: auto;
+}
+
+.bodyFatAverageValues table {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.bodyFatAverageValues th,.bodyFatAverageValues td {
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.bodyFatAverageValues td {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.risks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.measureBodyFat {
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.measureBodyFatTitle {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.measureBodyFatDescription {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.measureBodyFatDescription > p {
+    margin-bottom: 1rem;
+}
+
+.measureBodyFatDescription ul {
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+}
+
+.measureBodyFatDescription li {
+    margin-bottom: 0.5rem;
+    word-spacing: 0.1rem;
+}
+
+.measureBodyFatDescriptionEquationsForMen, .measureBodyFatDescriptionEquationsForWomen {
+    text-align: center;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.measureBodyFatDescriptionEquationsForMenTitle, .measureBodyFatDescriptionEquationsForWomenTitle {
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.helper {
+    background-color: #FF004D;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin: 0.5rem 0rem;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .bodyFatCalculatorPageInnerContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .bodyFatTableOuter {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bodyFatTableToggle {
+        height: 20%;
+    }
+
+    .bodyFatTableToggle button {
+        width: 100%;
+        height: 2rem;
+    }
+
+    .bodyFatAverageValues {
+        padding: 1.5rem;
+        width: 100%;
+        height: auto;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overweightRisk {
+        padding: 1.2rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .underweightRisk {
+        padding: 1.2rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .outputOfBodyFat {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outputOfBodyFatTop {
+        display: flex;
+        gap: 2rem;
+        height: auto;
+    }
+
+    .measureBodyFatDescription ul {
+        margin-left: 2rem;
+    }
+}

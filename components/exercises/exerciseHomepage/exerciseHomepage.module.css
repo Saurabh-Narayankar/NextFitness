@@ -1,0 +1,141 @@
+.exerciseHomepageContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.exerciseHomepageInnerContainer {
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+    width: 90%;
+    height: auto;
+}
+
+.exerciseHomepageFilter {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 20%;
+    height: auto;
+    padding: 1rem;
+}
+
+.exerciseHomepageFilterInner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.exerciseHomepageFilterInner > h2 {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.exerciseHomepageFilterInnerRadio {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(100, 100, 100);
+    height: 700px;
+    overflow-y: auto;
+}
+
+.exerciseRadio {
+    border: 1px solid rgb(100, 100, 100);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.exerciseHomepageFilterInnerRadio label {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+/* .exerciseHomepageFilterInnerRadio input {
+    margin-bottom: 1.2rem;
+} */
+
+.exerciseHomepageFilterInnerRadio input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.exerciseHomepageFilterInnerRadio input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.exerciseHomepageContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+    gap: 3rem;
+    width: 80%;
+    height: auto;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .exerciseHomepageInnerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .exerciseHomepageFilter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .exerciseHomepageFilterInner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .exerciseHomepageFilterInnerRadio {
+        display: flex;
+        flex-direction: column;
+        column-gap: 5rem;
+        height: auto;
+        overflow-y: hidden;
+        
+    }
+    
+    .exerciseHomepageContent {
+        width: 100%;
+        height: auto;
+    }
+
+}

@@ -1,0 +1,366 @@
+.BmiCalculatorPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.BmiCalculatorPageContainer p {
+    word-spacing: 0.3rem;
+}
+
+.BmiCalculatorPageContainer h1 {
+    background-color: #9D0B28;
+    margin-top: 2rem;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.BmiCalculatorPageInnerContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 80%;
+}
+
+.BMIDescription {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.bmiTableAndAverageValues {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.bmiTableOuter {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outputOfBmi {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outputOfBmi h3 {
+    margin-top: 0.5rem;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.outputOfBmiTop {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+}
+
+.chartsForChildrenAndTeens {
+    display: flex;
+    flex-direction: column;
+}
+
+.outputOfBmiBottom {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.outputOfBmiBottom button {
+    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+    width: 100%;
+    height: 3rem;
+}
+
+.outputOfBmiBottom button:hover {
+    background-color: #4b0615;
+    transition: 400ms;
+}
+
+.bmiTableToggle {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.bmiTableToggle button {
+    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 60%;
+    height: 3rem;
+}
+
+.bmiTableToggle button:hover {
+    background-color: #4b0615;
+    transition: 400ms;
+}
+
+.bmiTableQuantities {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+    width: 90%;
+    height: auto;
+}
+
+.bmiTableQuantities fieldset .innerHeight {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.bmiTableQuantities button {
+    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 10px;
+    width: 100%;
+    height: 3rem;
+}
+
+.bmiTableQuantities button:hover {
+    background-color: #4b0615;
+    transition: 400ms;
+}
+
+.bmiTableQuantities input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.bmiTableQuantities select {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.bmiTableQuantities legend {
+    padding: 10px;
+}
+
+.bmiAverageValues {
+    padding: 1.2rem;
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.bmiAverageValues p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.bmiAverageValues .averageForMen {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.bmiAverageValues .averageForChild {
+    width: 100%;
+    height: auto;
+}
+
+.bmiAverageValues table {
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.bmiAverageValues th,.bmiAverageValues td {
+    border: 1px solid rgb(100, 100, 100);
+}
+
+.bmiAverageValues td {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.risks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    height: auto;
+}
+
+.overweightRisk {
+    width: 50%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.overweightRisk p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.overweightRisk ul {
+    padding: 1rem;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    height: auto;
+}
+
+.overweightRisk li {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.underweightRisk {
+    width: 50%;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.underweightRisk p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+}
+
+.underweightRisk ul {
+    padding: 1rem;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    height: auto;
+}
+
+.underweightRisk li {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .BmiCalculatorPageInnerContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .bmiTableOuter {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bmiTableToggle {
+        height: 20%;
+    }
+
+    .bmiTableToggle button {
+        width: 100%;
+        height: 2rem;
+    }
+
+    .bmiAverageValues {
+        padding: 1.5rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overweightRisk {
+        padding: 1.2rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .underweightRisk {
+        padding: 1.2rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .outputOfBmi {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outputOfBmiTop {
+        display: flex;
+        gap: 2rem;
+    }
+}
