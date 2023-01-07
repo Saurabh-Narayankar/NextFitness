@@ -12,6 +12,7 @@ const ExerciseHomepage = () => {
     const [exercises, setExercises] = useState([])
 
     useEffect(() => {
+        const Abductors = async () => {
             let abductors = [{
                 "bodyPart": "upper legs",
                 "equipment": "body weight",
@@ -53,6 +54,11 @@ const ExerciseHomepage = () => {
                 "target": "abductors"
             }]
             setExercises(abductors)
+            let mongoConnectForFirstTime = await fetch(`https://next-fitness.vercel.app/api/`)
+            mongoConnectForFirstTime = await mongoConnectForFirstTime.json()
+        }
+        Abductors()
+
     }, []);
 
     if (!exercises) {

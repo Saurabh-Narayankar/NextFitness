@@ -8,8 +8,8 @@ export default async function handler(req, res) {
     if(req.method === "GET") {
         const data = '0001'
 
-        const filteredExercise = await db.collection('exercise').find({id: data})
-        res.status(200).json({response: "hello"})
+        const filteredExercise = await db.collection('exercise').find({id: data}).toArray()
+        res.status(200).json({filteredExercise: filteredExercise})
     
     }
 }
