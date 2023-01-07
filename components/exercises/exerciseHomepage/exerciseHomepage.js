@@ -54,7 +54,7 @@ const ExerciseHomepage = () => {
                 "target": "abductors"
             }]
             setExercises(abductors)
-            let mongoConnectForFirstTime = await fetch(`https://next-fitness.vercel.app/api/`)
+            let mongoConnectForFirstTime = await fetch(`https://next-fitness.vercel.app/api/exercise/abductors`)
             mongoConnectForFirstTime = await mongoConnectForFirstTime.json()
         }
         Abductors()
