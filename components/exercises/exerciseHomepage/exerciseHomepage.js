@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import classes from './exerciseHomepage.module.css'
+import { collection, getDocs, setDoc, doc } from 'firebase/firestore'
 
 import { DATA } from '../../../data'
 import ExerciseCard from '../exerciseCard/exerciseCard'
+import db from '../../../lib/initFirebase'
 
 const ExerciseHomepage = () => {
 
@@ -13,49 +15,12 @@ const ExerciseHomepage = () => {
 
     useEffect(() => {
         const Abductors = async () => {
-            let abductors = [{
-                "bodyPart": "upper legs",
-                "equipment": "body weight",
-                "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1427.gif",
-                "id": "1427",
-                "name": "straight leg outer hip abductor",
-                "target": "abductors"
-            },
-            {
-                "bodyPart": "upper legs",
-                "equipment": "body weight",
-                "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0710.gif",
-                "id": "0710",
-                "name": "side hip abduction",
-                "target": "abductors"
-            },
-            {
-                "bodyPart": "upper legs",
-                "equipment": "body weight",
-                "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1774.gif",
-                "id": "1774",
-                "name": "side bridge hip abduction",
-                "target": "abductors"
-            },
-            {
-                "bodyPart": "upper legs",
-                "equipment": "resistance band",
-                "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3006.gif",
-                "id": "3006",
-                "name": "resistance band seated hip abduction",
-                "target": "abductors"
-            },
-            {
-                "bodyPart": "upper legs",
-                "equipment": "leverage machine",
-                "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0597.gif",
-                "id": "0597",
-                "name": "lever seated hip abduction",
-                "target": "abductors"
-            }]
-            setExercises(abductors)
-            let mongoConnectForFirstTime = await fetch(`https://next-fitness.vercel.app/api/exercise/abductors`)
-            mongoConnectForFirstTime = await mongoConnectForFirstTime.json()
+
+            const colRef = collection(db, 'exercises/abductors/abductorsExercises' )
+            const snapshots = await getDocs(colRef)
+            const docs = snapshots.docs.map(doc => doc.data())
+            setExercises(docs)
+
         }
         Abductors()
 
@@ -66,9 +31,10 @@ const ExerciseHomepage = () => {
     }
 
     const exerciseSelector = async (event) => {
-        let filterExercise = await fetch(`https://next-fitness.vercel.app/api/exercise/${event.target.value}`)
-        filterExercise = await filterExercise.json()
-        setExercises(filterExercise.filteredExercise)
+        const colRef = collection(db, `exercises/${event.target.value}/${event.target.value}Exercises` )
+            const snapshots = await getDocs(colRef)
+            const docs = snapshots.docs.map(doc => doc.data())
+            setExercises(docs)
     }
 
     return (
@@ -99,11 +65,11 @@ const ExerciseHomepage = () => {
                                 <label id='calves'>Calves</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="cardiovascular-system" name="targetMuscle" value="cardiovascular system" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="cardiovascular-system" name="targetMuscle" value="cardio" onChange={event => exerciseSelector(event)} />
                                 <label id='cardiovascular-system'>Cardio</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="delts" name="targetMuscle" value="delts" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="delts" name="targetMuscle" value="shoulders" onChange={event => exerciseSelector(event)} />
                                 <label id='delts'>Shoulders</label>
                             </div>
                             <div className={classes.exerciseRadio}>
@@ -123,11 +89,11 @@ const ExerciseHomepage = () => {
                                 <label id='lats'>Lats</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="levator-scapulae" name="targetMuscle" value="levator scapulae" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="levator-scapulae" name="targetMuscle" value="neck" onChange={event => exerciseSelector(event)} />
                                 <label id='levator-scapulae'>Levator-Scapulae</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="pectorals" name="targetMuscle" value="pectorals" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="pectorals" name="targetMuscle" value="chest" onChange={event => exerciseSelector(event)} />
                                 <label id='pectorals'>Chest</label>
                             </div>
                             <div className={classes.exerciseRadio}>
@@ -135,7 +101,7 @@ const ExerciseHomepage = () => {
                                 <label id='quads'>Quads</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="serratus-anterior" name="targetMuscle" value="serratus anterior" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="serratus-anterior" name="targetMuscle" value="serratusAnterior" onChange={event => exerciseSelector(event)} />
                                 <label id='serratus-anterior'>Serratus-Anterior</label>
                             </div>
                             <div className={classes.exerciseRadio}>
@@ -151,7 +117,7 @@ const ExerciseHomepage = () => {
                                 <label id='triceps'>Triceps</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="upper-back" name="targetMuscle" value="upper back" onChange={event => exerciseSelector(event)}  />
+                                <input type="radio" id="upper-back" name="targetMuscle" value="upperBack" onChange={event => exerciseSelector(event)}  />
                                 <label id='upper-back'>Upper-Back</label>
                             </div>
 
