@@ -133,7 +133,7 @@ const BmiCalculatorPage = () => {
                                     <button onClick={resetBMI}>Goto BMI Calculator</button>
                                 </div>
                             </>
-                            )}
+                            )} 
                         </div>
                     ) : (
                         <div className={classes.bmiTableOuter}>

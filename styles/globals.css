@@ -9,6 +9,19 @@
 html,
 body {
   font-family: 'Manrope', sans-serif;
+  color: black;
+    background: #dffabf;
+}
+
+input[type="number"], input[type="text"], input[type="email"], input[type="password"] {
+  background-color : #e7f9d2;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+select {
+  background-color : #e7f9d2;
+  border-radius: 0.5rem;
 }
 
 a {
@@ -16,39 +29,24 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: #121212;
-  }
-
-  option {
-    background-color: white;
-    color: black;
-  }
-
   /* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 0.5rem;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 0.5rem;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-}
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0.5rem;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(184, 184, 184);
+    border-radius: 0.5rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(130, 130, 130);
+  }

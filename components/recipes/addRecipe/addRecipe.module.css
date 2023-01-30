@@ -1,0 +1,527 @@
+.addRecipeContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.addRecipeInnerContainer {
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 90%;
+}
+
+.addRecipeInnerContainer > h1 {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+    background-color: #9CFF2E;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+}
+
+.addRecipeForm {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    height: auto;
+    padding: 1rem;
+}
+
+.recipeName {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.recipeName label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.recipeName input {
+    width: 100%;
+    height: 35px;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.recipeCuisineCourseAndDiet_type {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.recipeCuisine {
+    border-right: 1px solid rgb(100, 100, 100);
+    width: 33%;
+    padding: 1rem;
+}
+
+.recipeCuisine label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.recipeCuisine select {
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+}
+
+.recipeCourse {
+    border-right: 1px solid rgb(100, 100, 100);
+    width: 33%;
+    padding: 1rem;
+}
+
+.recipeCourse label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.recipeCourse select {
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+}
+
+.recipeDiet_type {
+    width: 34%;
+    padding: 1rem;
+
+}
+
+.recipeDiet_type label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.recipeDiet_type select {
+    width: 100%;
+    height: 30px;
+    font-size: 1.1rem;
+}
+
+.recipePrep_Cook_TotalTimeAndServings {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.recipePrepTime {
+    border-right: 1px solid rgb(100, 100, 100);
+    width: 25%;
+    padding: 1rem;
+}
+
+.recipePrepTime label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.recipePrepTime input {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+    padding-left: 0.2rem;
+}
+
+.recipeCookTime {
+    border-right: 1px solid rgb(100, 100, 100);
+    width: 25%;
+    padding: 1rem;
+}
+
+.recipeCookTime label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.recipeCookTime input {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+    padding-left: 0.2rem;
+}
+
+.recipeTotalTime {
+    border-right: 1px solid rgb(100, 100, 100);
+    width: 25%;
+    padding: 1rem;
+}
+
+.recipeTotalTime label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.recipeTotalTime input {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+    padding-left: 0.2rem;
+}
+
+.recipeServings {
+    width: 25%;
+    padding: 1rem;
+}
+
+.recipeServings label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.recipeServings input {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+    padding-left: 0.2rem;
+}
+
+.recipeIngredientsAndInstructions {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.recipeIngredients {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    height: auto;
+    width: 50%;
+    padding: 0.3rem;
+    margin-right: 1rem;
+}
+
+.recipeIngredients > p {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recipeInstructions {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    height: auto;
+    width: 50%;
+    padding: 0.3rem;
+}
+
+.recipeInstructions > p {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.recipeIngredientsListAndAddButton {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.recipeIngredientsListAndAddButton li {
+    margin-bottom: 0.8rem;
+}
+
+.recipeIngredientsListAndAddButton li input {
+    height: 30px;
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.recipeIngredientsListAndAddButton button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.recipeIngredientsListAndAddButton .recipeIngredientsAddButton {
+    background-color: rgb(0, 106, 255);
+    border: none;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.recipeIngredientsListAndAddButton .recipeIngredientsAddButton:hover {
+    background-color: rgb(0, 65, 155);
+    transition: 200ms;
+}
+
+.recipeIngredientsListAndAddButton .recipeIngredientsRemoveButton {
+    background-color: rgb(255, 72, 0);
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.recipeIngredientsListAndAddButton .recipeIngredientsRemoveButton:hover {
+    background-color: rgb(161, 46, 0);
+    transition: 200ms;
+}
+
+.recipeInstructionsListAndAddButton {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.recipeInstructionsListAndAddButton li {
+    margin-bottom: 0.8rem;
+}
+
+.recipeInstructionsListAndAddButton li input {
+    height: 30px;
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.recipeInstructionsListAndAddButton button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.recipeInstructionsListAndAddButton .recipeIngredientsAddButton {
+    background-color: rgb(0, 106, 255);
+    border: none;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.recipeInstructionsListAndAddButton .recipeIngredientsAddButton:hover {
+    background-color: rgb(0, 65, 155);
+    transition: 200ms;
+}
+
+.recipeInstructionsListAndAddButton .recipeIngredientsRemoveButton {
+    background-color: rgb(255, 72, 0);
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.recipeInstructionsListAndAddButton .recipeIngredientsRemoveButton:hover {
+    background-color: rgb(161, 46, 0);
+    transition: 200ms;
+}
+
+.submitButton {
+    text-align: center;
+}
+
+.submitButton button {
+    padding: 1rem 10rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgb(86, 164, 26);
+}
+
+.submitButton button:hover {
+    background-color: rgb(63, 121, 19);
+    transition: 200ms;
+}
+
+
+
+
+@media screen and (max-width: 1400px) {
+
+    .recipeIngredientsAndInstructions {
+        flex-direction: column;
+    }
+
+    .recipeIngredients {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .recipeInstructions {
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .recipeName label {
+        font-size: 1rem;
+    }
+    
+    .recipeName input {
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .recipeCuisineCourseAndDiet_type {
+        flex-direction: column;
+    }
+    
+    .recipeCuisine {
+        border-bottom: 1px solid rgb(100, 100, 100);
+        border-right: none;
+        width: 100%;
+    }
+    
+    .recipeCuisine select {
+        font-size: 0.9rem;
+    }
+    
+    .recipeCourse {
+        border-bottom: 1px solid rgb(100, 100, 100);
+        border-right: none;
+        width: 100%;
+    }
+    
+    .recipeCourse select {
+        font-size: 0.9rem;
+    }
+    
+    .recipeDiet_type {
+        width: 100%;
+    }
+    
+    .recipeDiet_type select {
+        font-size: 0.9rem;
+    }
+
+    .recipePrep_Cook_TotalTimeAndServings {
+        flex-direction: column;
+        border-bottom: 1px solid rgb(100, 100, 100);
+    }
+    
+    .recipePrepTime {
+        border-bottom: 1px solid rgb(100, 100, 100);
+        border-right: none;
+        width: 100%;
+    }
+    
+    .recipePrepTime label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .recipePrepTime input {
+        width: 100%;
+        height: 25px;
+        font-size: 1rem;
+    }
+    
+    .recipeCookTime {
+        border-bottom: 1px solid rgb(100, 100, 100);
+        border-right: none;
+        width: 100%;
+    }
+    
+    .recipeCookTime label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .recipeCookTime input {
+        width: 100%;
+        height: 25px;
+        font-size: 1rem;
+    }
+    
+    .recipeTotalTime {
+        border-bottom: 1px solid rgb(100, 100, 100);
+        border-right: none;
+        width: 100%;
+    }
+    
+    .recipeTotalTime label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .recipeTotalTime input {
+        width: 100%;
+        height: 25px;
+        font-size: 1rem;
+    }
+    
+    .recipeServings {
+        width: 100%;
+    }
+    
+    .recipeServings label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .recipeServings input {
+        width: 100%;
+        height: 25px;
+        font-size: 1rem;
+    }
+
+    .recipeIngredientsAndInstructions {
+        flex-direction: column;
+    }
+
+    .recipeIngredients {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .recipeInstructions {
+        width: 100%;
+    }
+
+    .recipeIngredientsListAndAddButton {
+        margin-right: 1rem;
+    }
+
+    .recipeInstructionsListAndAddButton {
+        margin-right: 1rem;
+    }
+
+    .submitButton button {
+        padding: 1rem 6rem;
+        font-size: 1.2rem;
+        border-radius: 0.5rem;
+        border: none;
+        background-color: rgb(86, 164, 26);
+    }
+
+}

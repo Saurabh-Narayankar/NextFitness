@@ -1,5 +1,7 @@
 import Link from 'next/link';
+
 import classes from './ItemCard.module.css'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
@@ -23,4 +25,4 @@ const ItemCard = ({ title, subTitle, description, gotoLink }) => {
     )
 }
 
-export default ItemCard;
+export default ItemCard; 

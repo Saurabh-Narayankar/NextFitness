@@ -1,0 +1,188 @@
+.logInContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.logInInnerContainer {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+    background-color: #d5f8ad;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.logInImage {
+    display: flex;
+    border-radius: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.logInImageInner {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.authenticateImage {
+    width: 100%;
+    height: 100%;
+}
+
+.logInForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    width: 50%;
+    background-color: #c3f58a;
+}
+
+.logInFormInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    width: 95%;
+    height: 90%;
+    border-radius: 0.5rem;
+}
+
+.logInFormInner p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.logInFormContainer {
+    border: 1px solid #84b24f;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.logInInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    width: 100%;
+    height: 80%;
+}
+
+.logInInput label {
+    font-size: 1.2rem;
+    display: block;
+}
+
+.logInInput input {
+    margin-top: 0.8rem;
+    padding: 1rem;
+    width: 100%;
+    height: 50%;
+    font-size: 1rem;
+}
+
+.logInButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.logInButton button {
+    border: 1px solid green;
+    border-radius: 0.5rem;
+    width: 50%;
+    height: 50%;
+    font-size: 1.2rem;
+    background: linear-gradient(90deg, #2dbb3e, transparent) #9CFF2E;
+}
+
+.logInButton button:hover {
+    background-color: #208e2d;
+    transition: 300ms;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 1400px) {
+
+    .logInInput label {
+        font-size: 1rem;
+    }
+
+    .logInInput input {
+        font-size: 0.7rem;
+    }
+
+    .logInButton button {
+        width: 40%;
+        height: 80%;
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .logInImage {
+        display: none;
+    }
+
+    .logInFormInner {
+        height: 100%;
+    }
+
+    .logInForm {
+        height: 100%;
+        width: 100%;
+    }
+
+    .logInInput input {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .logInInnerContainer {
+        padding: 1rem;
+    }
+
+    .logInFormInner {
+        width: 100%;
+    }
+
+    .logInInput input {
+        height: 30px;
+        font-size: 0.8rem;
+    }
+
+}
+

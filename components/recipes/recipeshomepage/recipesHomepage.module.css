@@ -1,0 +1,270 @@
+.recipeHomepageContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.recipeHomepageInnerContainer {
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 90%;
+}
+
+.searchAndAddRecipeTab {
+    /* border: 1px solid pink; */
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.addRecipeButton {
+    display: flex;
+    height: 90%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffbc2a;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+.addRecipeButton:hover {
+    background-color: #d69e26;
+    transition: 300ms;
+}
+
+.searchTab {
+    border-radius: 0.5rem;
+    display: flex;
+    height: 90%;
+    padding: 0.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    margin-top: 1rem;
+}
+
+.cuisineTab {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    display: flex;
+    height: 100%;
+    padding: 0.5rem 0.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 25%;
+}
+
+.cuisineTab select {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+}
+
+.cuisineTab label {
+    font-size: 1.2rem;
+}
+
+.courseTab {
+    border: 1px solid rgb(100, 100, 100);
+    display: flex;
+    height: 100%;
+    padding: 0.5rem 0.5rem;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 25%;
+    border-radius: 0.5rem;
+}
+
+.courseTab select {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+}
+
+.courseTab label {
+    font-size: 1.2rem;
+}
+
+.dietTab {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 0.5rem;
+    display: flex;
+    height: 100%;
+    padding: 0.5rem 0.5rem;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 25%;
+}
+
+.dietTab select {
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+}
+
+.dietTab label {
+    font-size: 1.2rem;
+}
+
+.submitButton {
+    height: 100%;
+    flex-direction: row;
+    width: 20%;
+}
+
+.submitButton button {
+    border-radius: 0.5rem;
+    display: flex;
+    height: 100%;
+    font-size: 100%;
+    background-color: #29ec6a;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    color: white;
+}
+
+.submitButton button:hover {
+    background-color: #21bf56;
+    transition: 300ms;
+}
+
+.addRecipeButton p, .submitButton p {
+    font-size: 1.2rem;
+}
+
+.addRecipeButton p{
+    padding: 1.5rem;
+}
+
+.recipesTab {
+    /* border: 1px solid pink; */
+    display: flex;
+    height: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-between;
+    gap: 3rem;
+    width: 100%;
+    height: auto;
+}
+
+.astericCompulsory {
+    color: red;
+}
+
+.noRecipesFound {
+    width: 100%;
+    border: 1px solid rgb(100, 100, 100);
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .searchTab {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .cuisineTab {
+        width: 100%;
+    }
+
+    .cuisineTab select {
+        font-size: 1.2rem;
+    }
+
+    .courseTab {
+        width: 100%;
+    }
+
+    .courseTab select {
+        font-size: 1.2rem;
+    }
+
+    .dietTab {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .dietTab select {
+        font-size: 1.2rem;
+    }
+
+    .submitButton {
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1011px) {
+
+    .cuisineTab select {
+        font-size: 0.8rem;
+    }
+    
+    .cuisineTab label {
+        font-size: 1rem;
+    }
+
+    .courseTab select {
+        font-size: 0.8rem;
+    }
+    
+    .courseTab label {
+        font-size: 1rem;
+    }
+
+    .dietTab select {
+        font-size: 0.8rem;
+    }
+    
+    .dietTab label {
+        font-size: 1rem;
+    }
+
+    .addRecipeButton p, .submitButton p {
+        font-size: 1rem;
+    }
+
+    .recipesTab {
+        display: flex;
+        height: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem;
+        justify-content: center;
+        gap: 3rem;
+        width: 100%;
+        height: auto;
+    }
+
+}

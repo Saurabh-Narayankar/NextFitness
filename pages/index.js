@@ -1,11 +1,11 @@
-import { useEffect } from "react";
+import GetPost from "../components/get-post-firebase/get-post-firebase";
 import HomePage from "../components/homepage/homepage";
-import { initFirebase } from "../lib/initFirebase";
 
 export default function Home() {
 
   return (
     <div>
+      <GetPost />
       <HomePage />
     </div>
   )

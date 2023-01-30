@@ -1,15 +1,15 @@
 .ItemCardContainer {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(105, 105, 105, 0.5);
     width: 40%;
     height: 500px;
     border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 
 .ItemCardContainer:hover {
     transition: 400ms;
-    border: 1px solid rgba(105, 105, 105, 0.5);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 
 .ItemCardContainer .title {
@@ -18,7 +18,7 @@
     justify-content: center;
     height: 20%;
     padding-left: 1.5rem;
-    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    background: linear-gradient(90deg, #2dbb3e, transparent) #9CFF2E;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
@@ -26,8 +26,7 @@
 .ItemCardContainer:hover .title {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    background-color: #33040e;
-    color: white;
+    background-color: #155f1e;
     transition: 400ms;
 }
 
@@ -46,7 +45,7 @@
     height: 70%;
     padding-left: 1.5rem;
     padding-top: 1rem;
-    background-color: #090909;
+    background-color: #d5f8ad;
 }
 
 .ItemCardContainer .description ul {
@@ -66,7 +65,7 @@
     align-items: center;
     height: 10%;
     padding-left: 1.5rem;
-    background: linear-gradient(90deg, #9D0B28, transparent) #33040e;
+    background: linear-gradient(90deg, #2dbb3e, transparent) #155f1e;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
 }
@@ -74,8 +73,8 @@
 .ItemCardContainer:hover .gotoLink {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    background-color: #FF004D;
-    color: white;
+    background-color: #9CFF2E;
+    color: #c3f689;
     transition: 400ms;
 }
 
@@ -93,7 +92,7 @@
 @media screen and (max-width: 1200px) {
     
     .ItemCardContainer {
-        width: 300px;
+        width: 700px;
         height: 500px;
     }
 
@@ -116,7 +115,7 @@
 @media screen and (max-width: 800px) {
     
     .ItemCardContainer {
-        width: 300px;
+        width: 500px;
         height: 500px;
     }
 

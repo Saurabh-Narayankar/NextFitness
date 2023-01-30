@@ -1,11 +1,16 @@
 import Navbar from '../components/navbar/navbar'
+
+import { UserProvider } from '../context/userContext'
+
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return(
     <>
-      <Navbar />
-      <Component {...pageProps} />
+      <UserProvider>
+        <Navbar />
+        <Component {...pageProps} />
+      </UserProvider>
     </>
   )
 }

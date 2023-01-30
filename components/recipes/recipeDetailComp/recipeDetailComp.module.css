@@ -1,0 +1,274 @@
+.detailRecipeContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.detailRecipeInnerContainer {
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 90%;
+}
+
+.recipeHeading {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.recipeFilters {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+.recipeFilter {
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.recipeTimeAndServing {
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.recipeFilter1 {
+    padding-right: 1.3rem;
+    display: inline;
+}
+
+.recipeFilter2 {
+    padding-right: 1.3rem;
+    display: inline;
+}
+
+.recipeFilter3 {
+    display: inline;
+}
+
+.recipeTimeAndServing {
+    height: 100px;
+}
+
+.recipePrepTime {
+    text-align: center;
+    border-right: 1px solid rgb(100, 100, 100);
+    width: 25%;
+}
+
+.recipeCookTime {
+    text-align: center;
+    border-right: 1px solid rgb(100, 100, 100);
+    width: 25%;
+}
+
+.recipeTotalTime {
+    text-align: center;
+    border-right: 1px solid rgb(100, 100, 100);
+    width: 25%;
+}
+
+.recipeServing {
+    text-align: center;
+    width: 25%;
+}
+
+.fontAwesomeIcon {
+    margin-bottom: 0.5rem;
+}
+
+.recipeIngredientAndInstructions {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+.recipeIngredients {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    margin-right: 1rem;
+    width: 50%;
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+}
+
+.recipeIngredients > p {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.recipeInstructions {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    width: 50%;
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.recipeInstructions > p {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.IngredientList {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding-right: 1rem;
+}
+
+.IngredientItem {
+    margin-bottom: 0.5rem;
+    word-spacing: 0.1rem;
+}
+
+.instructionList {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding-right: 1rem;
+}
+
+.instructionItem {
+    margin-bottom: 0.5rem;
+    word-spacing: 0.1rem;
+}
+
+
+
+
+@media screen and (max-width: 1500px) {
+
+    .recipeFilter1 {
+        display: block;
+    }
+    
+    .recipeFilter2 {
+        display: block;
+    }
+
+    .recipeFilter3 {
+        display: block;
+    }
+
+    .recipePrepTime {
+        font-size: 0.8rem;
+    }
+    
+    .recipeCookTime {
+        font-size: 0.8rem;
+    }
+    
+    .recipeTotalTime {
+        font-size: 0.8rem;
+    }
+    
+    .recipeServing {
+        font-size: 0.8rem;
+    }
+
+    .recipeIngredientAndInstructions {
+        flex-direction: column;
+    }
+
+    .recipeIngredients {
+        width: 100%;
+        margin-bottom: 2rem;
+    
+    }
+    
+    .recipeInstructions {
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .recipeFilters {
+        flex-direction: column;
+    }
+
+    .recipeFilter {
+        width: 100%;
+    }
+
+    .recipeFilter1 {
+        display: block;
+    }
+    
+    .recipeFilter2 {
+        display: block;
+    }
+
+    .recipeFilter3 {
+        display: block;
+    }
+    
+    .recipeTimeAndServing {
+        width: 100%;
+    }
+
+    .recipePrepTime {
+        font-size: 0.8rem;
+    }
+    
+    .recipeCookTime {
+        font-size: 0.8rem;
+    }
+    
+    .recipeTotalTime {
+        font-size: 0.8rem;
+    }
+    
+    .recipeServing {
+        font-size: 0.8rem;
+    }
+
+    .IngredientItem {
+        margin-bottom: 0.8rem;
+        word-spacing: 0.1rem;
+    }
+    
+    .instructionItem {
+        margin-bottom: 0.8rem;
+        word-spacing: 0.1rem;
+    }
+
+}

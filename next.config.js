@@ -3,6 +3,14 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     domains: ["d205bpvrqc9yn1.cloudfront.net"],
+  },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"]
+    });
+
+    return config;
   }
 }
 

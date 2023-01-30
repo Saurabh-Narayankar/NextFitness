@@ -11,31 +11,34 @@
 }
 
 .calorieIntakeCalculatorPageContainer h1 {
-    background-color: #9D0B28;
+    background-color: #9CFF2E;
     margin-top: 2rem;
-    border: 1px solid rgb(100, 100, 100);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     border-radius: 0.5rem;
     padding: 0.5rem;
+    width: 90%;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .calorieIntakeCalculatorPageInnerContainer {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    width: 80%;
+    width: 90%;
 }
 
 .calorieIntakeDescription {
-    padding: 1.2rem 2.4rem;
+    padding: 1rem 1rem;
     font-size: 1.2rem;
     height: auto;
+    margin-bottom: 2rem;
 }
 
 .calorieIntakeTableAndAverageValues {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1.2rem;
+    padding-bottom: 2rem;
     font-size: 1.2rem;
     height: auto;
 }
@@ -82,7 +85,7 @@
 }
 
 .outputOfCalorieIntakeBottom button {
-    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    background: linear-gradient(90deg, #2dbb3e, transparent) #9CFF2E;
     border: 1px solid rgb(56, 56, 56);
     font-size: 1rem;
     font-weight: bold;
@@ -93,7 +96,7 @@
 }
 
 .outputOfCalorieIntakeBottom button:hover {
-    background-color: #4b0615;
+    background-color: #155f1e;
     transition: 400ms;
 }
 
@@ -111,7 +114,7 @@
 }
 
 .calorieIntakeTableToggle button {
-    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    background: linear-gradient(90deg, #2dbb3e, transparent) #9CFF2E;
     border: 1px solid rgb(56, 56, 56);
     font-size: 1rem;
     font-weight: bold;
@@ -121,7 +124,7 @@
 }
 
 .calorieIntakeTableToggle button:hover {
-    background-color: #4b0615;
+    background-color: #155f1e;
     transition: 400ms;
 }
 
@@ -139,7 +142,7 @@
 }
 
 .calorieIntakeTableQuantities button {
-    background: linear-gradient(90deg, #9D0B28, transparent) #FF004D;
+    background: linear-gradient(90deg, #2dbb3e, transparent) #9CFF2E;
     border: 1px solid rgb(56, 56, 56);
     font-size: 1rem;
     font-weight: bold;
@@ -150,7 +153,7 @@
 }
 
 .calorieIntakeTableQuantities button:hover {
-    background-color: #4b0615;
+    background-color: #155f1e;
     transition: 400ms;
 }
 
@@ -247,7 +250,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1.2rem;
+    padding-bottom: 2rem;
     font-size: 1.2rem;
     height: auto;
 }

@@ -1,25 +1,26 @@
 import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
-import classes from './exerciseHomepage.module.css'
-import { collection, getDocs, setDoc, doc } from 'firebase/firestore'
 
-import { DATA } from '../../../data'
+import classes from './exerciseHomepage.module.css'
+
 import ExerciseCard from '../exerciseCard/exerciseCard'
-import db from '../../../lib/initFirebase'
+
 
 const ExerciseHomepage = () => {
-
-    const router = useRouter()
 
     const [exercises, setExercises] = useState([])
 
     useEffect(() => {
         const Abductors = async () => {
 
-            const colRef = collection(db, 'exercises/abductors/abductorsExercises' )
+            // firestore code
+            /* const colRef = collection(db, 'exercises/abductors/abductorsExercises' )
             const snapshots = await getDocs(colRef)
-            const docs = snapshots.docs.map(doc => doc.data())
-            setExercises(docs)
+            const abductorExercise = snapshots.docs.map(doc => doc.data())
+            setExercises(abductorExercise) */
+
+            const exercise = await fetch(`http://localhost:4000/exercise/abductors`)
+            const exerciseResponse = await exercise.json()
+            setExercises(exerciseResponse)
 
         }
         Abductors()
@@ -31,10 +32,17 @@ const ExerciseHomepage = () => {
     }
 
     const exerciseSelector = async (event) => {
-        const colRef = collection(db, `exercises/${event.target.value}/${event.target.value}Exercises` )
-            const snapshots = await getDocs(colRef)
-            const docs = snapshots.docs.map(doc => doc.data())
-            setExercises(docs)
+
+        // firestore code
+        /* const colRef = collection(db, `exercises/${event.target.value}/${event.target.value}Exercises` )
+        const snapshots = await getDocs(colRef)
+        const currentExerciseData = snapshots.docs.map(doc => doc.data())
+        setExercises(currentExerciseData) */
+
+        const exercise = await fetch(`http://localhost:4000/exercise/${event.target.value}`)
+        const exerciseResponse = await exercise.json()
+        setExercises(exerciseResponse)
+
     }
 
     return (

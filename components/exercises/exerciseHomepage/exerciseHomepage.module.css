@@ -1,4 +1,5 @@
 .exerciseHomepageContainer {
+    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     width: 100%;
@@ -6,8 +7,8 @@
 }
 
 .exerciseHomepageInnerContainer {
+    /* border: 1px solid orange; */
     display: flex;
-    padding: 5px;
     gap: 10px;
     width: 90%;
     height: auto;
@@ -34,20 +35,20 @@
     border: 1px solid rgb(100, 100, 100);
     border-radius: 0.5rem;
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 
 .exerciseHomepageFilterInnerRadio {
     border-radius: 0.5rem;
     padding: 0.5rem;
-    border: 1px solid rgb(100, 100, 100);
     height: 700px;
     overflow-y: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 }
 
 .exerciseRadio {
-    border: 1px solid rgb(100, 100, 100);
+    border-bottom: 1px solid rgb(100, 100, 100);
     padding: 0.5rem;
-    border-radius: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
@@ -81,7 +82,7 @@
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: #ffa500;
+    background-color: #44ff00;
     content: '';
     display: inline-block;
     visibility: visible;
@@ -94,7 +95,7 @@
     flex-wrap: wrap;
     padding: 1rem;
     justify-content: center;
-    gap: 3rem;
+    gap: 4rem;
     width: 80%;
     height: auto;
 }
@@ -136,6 +137,29 @@
     .exerciseHomepageContent {
         width: 100%;
         height: auto;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .exerciseHomepageFilter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding: 0rem;
+        margin-bottom: 2rem;
+    }
+    
+    .exerciseHomepageContent {
+        width: 100%;
+        height: auto;
+        padding: 0rem;
     }
 
 }
