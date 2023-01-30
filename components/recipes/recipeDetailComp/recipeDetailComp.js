@@ -29,7 +29,6 @@ const RecipeDetailComp = ({ cuisine, course, id }) => {
         const getRecipeDetail = async () => {
             
             const singleRecipeFetch = await fetch(`http://localhost:4000/recipes/singleRecipe/${cuisine}/${course}/${id}`)
-            console.log(singleRecipeFetch);
             const singleRecipeData = await singleRecipeFetch.json()
             setRecipe(singleRecipeData)
 
@@ -37,7 +36,7 @@ const RecipeDetailComp = ({ cuisine, course, id }) => {
 
         getRecipeDetail()
         
-    }, [])
+    }, [course, cuisine, id])
 
 
     return (
@@ -48,10 +47,11 @@ const RecipeDetailComp = ({ cuisine, course, id }) => {
                 </div>
                 <div className={classes.recipeFilters}>
                     <div className={classes.recipeFilter}>
-                        <p>
+                        <>
                             <p className={classes.recipeFilter1} >Cuisine:-- {recipe.cuisine}</p>
                             <p className={classes.recipeFilter2} >Course:-- {recipe.course}</p>
-                            <p className={classes.recipeFilter3} >Diet - Type:-- {recipe.dietType}</p></p>
+                            <p className={classes.recipeFilter3} >Diet - Type:-- {recipe.dietType}</p>
+                        </>
                     </div>
                     <div className={classes.recipeTimeAndServing}>
                         <div className={classes.recipePrepTime}>
