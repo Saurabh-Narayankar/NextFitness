@@ -1,3 +1,6 @@
-.header {
-    color: red;
+.homepageContainer {
+    display: flex;
+    border: 1px solid red;
+    height: 70vh;
+    width: 100%;
 }

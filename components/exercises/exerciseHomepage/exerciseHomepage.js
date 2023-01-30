@@ -1,13 +1,26 @@
 import { useEffect, useState } from 'react'
 
 import classes from './exerciseHomepage.module.css'
+import Lottie from 'react-lottie';
 
+import animationData from '../../loadingSpinner/laodingSpinner.json'
 import ExerciseCard from '../exerciseCard/exerciseCard'
 
 
 const ExerciseHomepage = () => {
 
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice",
+        },
+    };
+
     const [exercises, setExercises] = useState([])
+    const [loading, setLoading] = useState(true)
+
 
     useEffect(() => {
         const Abductors = async () => {
@@ -21,6 +34,7 @@ const ExerciseHomepage = () => {
             const exercise = await fetch(`https://next-fitness-backend.vercel.app/exercise/abductors`)
             const exerciseResponse = await exercise.json()
             setExercises(exerciseResponse)
+            setLoading(false)
 
         }
         Abductors()
@@ -38,10 +52,13 @@ const ExerciseHomepage = () => {
         const snapshots = await getDocs(colRef)
         const currentExerciseData = snapshots.docs.map(doc => doc.data())
         setExercises(currentExerciseData) */
+        event.preventDefault()
+        setLoading(true)
 
         const exercise = await fetch(`https://next-fitness-backend.vercel.app/exercise/${event.target.value}`)
         const exerciseResponse = await exercise.json()
         setExercises(exerciseResponse)
+        setLoading(false)
 
     }
 
@@ -133,9 +150,9 @@ const ExerciseHomepage = () => {
                     </div>
                 </div>
                 <div className={classes.exerciseHomepageContent}>
-                    {exercises.map( exercise => (
+                    {!loading ? (exercises.map( exercise => (
                             <ExerciseCard exercise={exercise} key={exercise.id} />
-                    ))}
+                    ))) : <Lottie className={classes.spinnerAnimation} options={defaultOptions} height={150} width={150} /> }
                 </div>
             </div>
         </div>

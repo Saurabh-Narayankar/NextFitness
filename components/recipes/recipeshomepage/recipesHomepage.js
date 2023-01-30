@@ -1,13 +1,28 @@
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
+
 import classes from './recipesHomepage.module.css'
 
 import RecipeCard from '../recipeCard/recipeCard';
-import Link from 'next/link';
+import Lottie from 'react-lottie';
+import animationData from '../../loadingSpinner/laodingSpinner.json'
+
+
 
 
 const RecipesHomepage = () => {
 
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice",
+        },
+    };
+
     const [recipes, setRecipes] = useState([])
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
 
@@ -15,6 +30,7 @@ const RecipesHomepage = () => {
             const exercise = await fetch(`https://next-fitness-backend.vercel.app/recipes/assamese/mainCourse/none`)
             const exerciseResponse = await exercise.json()
             setRecipes(exerciseResponse)
+            setLoading(false)
         }
         firstRecipeFetch()
     }, [])
@@ -23,6 +39,7 @@ const RecipesHomepage = () => {
     const getRecipes = (event) => {
 
         event.preventDefault()
+        setLoading(true)
 
         const cuisine = event.target.cuisine.value
         const course = event.target.course.value
@@ -32,8 +49,10 @@ const RecipesHomepage = () => {
             const exercise = await fetch(`https://next-fitness-backend.vercel.app/recipes/${cuisine}/${course}/${diet}`)
             const exerciseResponse = await exercise.json()
             setRecipes(exerciseResponse)
+            
         }
         findRecipe()
+        setLoading(false)
     }
     
 
@@ -112,14 +131,14 @@ const RecipesHomepage = () => {
                         </form>
                     </div>
                     <div className={classes.recipesTab}>
-                    {recipes.length !== 0 ? (
+                    {!loading ? (recipes.length !== 0 ? (
                         recipes.map( recipe => (
                             <RecipeCard recipe={recipe} key={recipe.id} />
                     ))
                     ) : (
                         
                         <p className={classes.noRecipesFound}>No recipes Found</p>
-                    )}
+                    )): <Lottie className={classes.spinnerAnimation} options={defaultOptions} height={150} width={150} />}
                     </div>
                 </div>
             </div>

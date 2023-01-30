@@ -181,6 +181,12 @@
     border-radius: 0.5rem;
 }
 
+.spinnerAnimation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
@@ -219,6 +225,8 @@
     .submitButton {
         width: 100%;
     }
+
+
 
 }
 
@@ -265,6 +273,29 @@
         gap: 3rem;
         width: 100%;
         height: auto;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .recipeHomepageInnerContainer {
+        /* border: 1px solid orange; */
+        display: flex;
+        flex-direction: column;
+        padding: 0rem;
+        width: 90%;
+    }
+
+    .searchTab {
+        height: auto;
+    }
+
+    .recipesTab {
+        padding: 0.5rem;
     }
 
 }

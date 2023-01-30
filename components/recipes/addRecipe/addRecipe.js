@@ -79,7 +79,9 @@ const AddRecipe = () => {
                 body: JSON.stringify(recipeObj)
             })
             const addRecipeResultData = await addRecipeFetch.json()
-            console.log(addRecipeResultData);
+            if (addRecipeResultData.response === 'added successfully') {
+                alert('recipe added successfully')
+            }
 
         }
 
