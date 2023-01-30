@@ -18,7 +18,7 @@ const ExerciseHomepage = () => {
             const abductorExercise = snapshots.docs.map(doc => doc.data())
             setExercises(abductorExercise) */
 
-            const exercise = await fetch(`http://localhost:4000/exercise/abductors`)
+            const exercise = await fetch(`https://clean-boa-scarf.cyclic.app/exercise/abductors`)
             const exerciseResponse = await exercise.json()
             setExercises(exerciseResponse)
 
@@ -39,7 +39,7 @@ const ExerciseHomepage = () => {
         const currentExerciseData = snapshots.docs.map(doc => doc.data())
         setExercises(currentExerciseData) */
 
-        const exercise = await fetch(`http://localhost:4000/exercise/${event.target.value}`)
+        const exercise = await fetch(`https://clean-boa-scarf.cyclic.app/exercise/${event.target.value}`)
         const exerciseResponse = await exercise.json()
         setExercises(exerciseResponse)
 

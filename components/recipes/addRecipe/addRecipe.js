@@ -71,7 +71,7 @@ const AddRecipe = () => {
 
         const submitRecipeToBackend = async () => {
 
-            const addRecipeFetch = await fetch(`http://localhost:4000/recipes/addRecipe`, {
+            const addRecipeFetch = await fetch(`https://clean-boa-scarf.cyclic.app/recipes/addRecipe`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
