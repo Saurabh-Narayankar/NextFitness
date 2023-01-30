@@ -10,7 +10,7 @@ html,
 body {
   font-family: 'Manrope', sans-serif;
   color: black;
-    background: #dffabf;
+    background: #e4fac9;
 }
 
 input[type="number"], input[type="text"], input[type="email"], input[type="password"] {
@@ -42,11 +42,11 @@ a {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(184, 184, 184);
+    background: #87fc64;
     border-radius: 0.5rem;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(130, 130, 130);
+    background: #5fb146;
   }

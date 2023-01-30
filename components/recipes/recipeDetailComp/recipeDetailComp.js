@@ -28,7 +28,7 @@ const RecipeDetailComp = ({ cuisine, course, id }) => {
 
         const getRecipeDetail = async () => {
             
-            const singleRecipeFetch = await fetch(`https://clean-boa-scarf.cyclic.app/recipes/singleRecipe/${cuisine}/${course}/${id}`)
+            const singleRecipeFetch = await fetch(`https://next-fitness-backend.vercel.app/recipes/singleRecipe/${cuisine}/${course}/${id}`)
             const singleRecipeData = await singleRecipeFetch.json()
             setRecipe(singleRecipeData)
 

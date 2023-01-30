@@ -12,7 +12,7 @@ const RecipesHomepage = () => {
     useEffect(() => {
 
         const firstRecipeFetch = async () => {
-            const exercise = await fetch(`https://clean-boa-scarf.cyclic.app/recipes/assamese/mainCourse/none`)
+            const exercise = await fetch(`https://next-fitness-backend.vercel.app/recipes/assamese/mainCourse/none`)
             const exerciseResponse = await exercise.json()
             setRecipes(exerciseResponse)
         }
@@ -29,7 +29,7 @@ const RecipesHomepage = () => {
         const diet = event.target.diet.value
 
         const findRecipe = async () => {
-            const exercise = await fetch(`https://clean-boa-scarf.cyclic.app/recipes/${cuisine}/${course}/${diet}`)
+            const exercise = await fetch(`https://next-fitness-backend.vercel.app/recipes/${cuisine}/${course}/${diet}`)
             const exerciseResponse = await exercise.json()
             setRecipes(exerciseResponse)
         }

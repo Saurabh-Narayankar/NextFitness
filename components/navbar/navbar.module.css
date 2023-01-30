@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #1de234;
+    background-color: #46df58;
     padding: 1rem 2rem;
 }
 
@@ -12,8 +12,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: #9CFF2E;
+    background-color: #a9fb4b;
     padding: 0.6rem 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.);
 }
 
 .topNavbarRightSideMenu {
