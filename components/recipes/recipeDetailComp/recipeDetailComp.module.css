@@ -221,8 +221,13 @@
 
 @media screen and (max-width: 1000px) {
 
+    .detailRecipeInnerContainer {
+        width: 100%;
+    }
+
     .recipeFilters {
         flex-direction: column;
+        row-gap: 1rem;
     }
 
     .recipeFilter {

@@ -1,0 +1,170 @@
+.addFoodCardContainer {
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    height: auto;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.35);
+    border-radius: 0.5rem;
+    background-color: #d0fec2;
+}
+
+.addFoodCardInnerContainer {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100px;
+}
+
+.addFoodCardTitle_BrandAndMacros {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #84b24f;
+    border-radius: 0.5rem;
+    width: 85%;
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.addFoodCardTitleAndBrand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    row-gap: 0.2rem;
+    /* border: 1px solid maroon; */
+    width: 35%;
+}
+
+.addFoodCardTitle {
+    font-weight: bold;
+}
+
+.addFoodCardBrand {
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.addFoodCardMacros {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    /* border: 1px solid maroon; */
+    width: 65%;
+}
+
+.addFoodCardSingleMacro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-right: 1px solid gray;
+}
+
+.addFoodCardSingleMacroLast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.addFoodCardCustomServingAndButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #84b24f;
+    border-radius: 0.5rem;
+    width: 15%;
+    height: 100%;
+}
+
+.addItemForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.addFoodCardCustomServingAndButton input {
+    height: 30%;
+    width: 90%;
+    padding-left: 0.35rem;
+}
+
+.addFoodCardCustomServingAndButton button {
+    height: 40%;
+    width: 90%;
+    border-radius: 0.5rem;
+    border: 1px solid green;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .addFoodCardContainer {
+        padding: 0.5rem;
+    }
+
+    .addFoodCardInnerContainer {
+        height: 250px;
+    }
+    
+    .addFoodCardTitle_BrandAndMacros {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        border-radius: 0.5rem;
+    }
+
+    .addFoodCardTitleAndBrand {
+        font-size: 0.9rem;
+        justify-content: center;
+        padding-left: 1rem;
+        width: 100%;
+        height: 40%;
+        border-bottom: 1px solid #84b24f;
+    }
+    
+    .addFoodCardMacros {
+        flex-direction: column;
+        font-size: 0.8rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .addFoodCardSingleMacro {
+        width: 100%;
+        padding-bottom: 0.1rem;
+        border-bottom: 1px solid #84b24f;
+        border-right: none;
+    }
+
+    .addFoodCardSingleMacroLast {
+        width: 100%;
+    }
+
+    .addFoodCardCustomServingAndButton {
+        justify-content: space-around;
+        width: 20%;
+    }
+
+    .addFoodCardCustomServingAndButton input {
+        height: 30%;
+        font-size: 0.75rem;
+    }
+
+    .addFoodCardCustomServingAndButton button {
+        height: 50%;
+        font-size: 0.85rem;
+        padding: 0.4rem;
+    }
+
+}

@@ -1,0 +1,135 @@
+.foodItemCardContainer {
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 0.5rem 0.8rem;
+    height: auto;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 0.5rem;
+    background-color: #d0fec2;
+}
+
+.foodItemCardInnerContainer {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 100px;
+}
+
+.foodItemCardTitle_BrandAndMacros {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #84b24f;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.foodItemCardTitleAndBrand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+    row-gap: 0.2rem;
+    /* border: 1px solid maroon; */
+    width: 35%;
+}
+
+.foodItemCardTitle {
+    font-weight: bold;
+}
+
+.foodItemCardBrand {
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.foodItemCardMacros {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+    /* border: 1px solid maroon; */
+    width: 65%;
+}
+
+.foodItemCardSingleMacro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-right: 1px solid gray;
+}
+
+.foodItemCardSingleMacroLast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .foodItemCardContainer {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .foodItemCardInnerContainer {
+        height: 150px;
+    }
+    
+    .foodItemCardTitle_BrandAndMacros {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    .foodItemCardTitleAndBrand {
+        font-size: 0.9rem;
+        justify-content: center;
+        padding-left: 1rem;
+        width: 100%;
+        height: 80%;
+        border-bottom: 1px solid #84b24f;
+    }
+    
+    .foodItemCardMacros {
+        flex-direction: row;
+        font-size: 0.8rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .foodItemCardSingleMacro {
+        width: 100%;
+        padding-bottom: 0.1rem;
+    }
+
+    .foodItemCardSingleMacroLast {
+        width: 100%;
+    }
+
+    .foodItemCardCustomServingAndButton {
+        justify-content: space-around;
+        width: 20%;
+    }
+
+    .foodItemCardCustomServingAndButton input {
+        height: 30%;
+        font-size: 0.75rem;
+    }
+
+    .foodItemCardCustomServingAndButton button {
+        height: 50%;
+        font-size: 0.85rem;
+        padding: 0.4rem;
+    }
+
+}

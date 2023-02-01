@@ -1,0 +1,117 @@
+.foodHomepageContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-Bottom: 2rem;
+}
+
+.foodHomepageInnerContainer {
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    height: auto;
+}
+
+.meals {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem;
+    height: auto;
+    background-color: #d0fec2;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.35);
+}
+
+.mealTitle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 1px solid #84b24f;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    background-color: #b6f9a1;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+.mealData {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+.singleFoodData {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.addFoodButton {
+    margin-left: 0.5rem;
+    padding: 5px 10px;
+    border: 1px solid #84b24f;
+    color: green;
+    background-color: #d0fec2;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.addFoodButton:hover {
+    color: green;
+    background-color: #bbfba7;
+}
+
+.TotalTab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid #84b24f;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.TotalTabTitle {
+    font-weight: bold;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .TotalTab {
+        flex-direction: column;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        height: 130px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .foodHomepageInnerContainer {
+        width: 95%;
+    }
+
+}

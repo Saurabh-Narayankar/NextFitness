@@ -47,11 +47,11 @@ const RecipeDetailComp = ({ cuisine, course, id }) => {
                 </div>
                 <div className={classes.recipeFilters}>
                     <div className={classes.recipeFilter}>
-                        <>
+                        <div>
                             <p className={classes.recipeFilter1} >Cuisine:-- {recipe.cuisine}</p>
                             <p className={classes.recipeFilter2} >Course:-- {recipe.course}</p>
                             <p className={classes.recipeFilter3} >Diet - Type:-- {recipe.dietType}</p>
-                        </>
+                        </div>
                     </div>
                     <div className={classes.recipeTimeAndServing}>
                         <div className={classes.recipePrepTime}>

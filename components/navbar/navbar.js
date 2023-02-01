@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
+import { useRouter } from 'next/router';
 
 import classes from './navbar.module.css'
 
@@ -12,7 +13,14 @@ import { faDumbbell, faBowlFood, faCalculator, faUtensils, faRightFromBracket } 
 
 const Navbar = () => {
 
+    const router = useRouter()
+
     const { currentUser } = useContext(UserContext)
+
+    const signOut = () => {
+        SignOutUser()
+        router.push('/')
+    }
 
 
     return (
@@ -26,7 +34,7 @@ const Navbar = () => {
                             <div className={classes.profilePic} />
                             <p>LogOut</p>
                             <div className={classes.logoutButton}>
-                                <FontAwesomeIcon className={classes.logoutIcon} onClick={SignOutUser} icon={faRightFromBracket} size='lg' />
+                                <FontAwesomeIcon className={classes.logoutIcon} onClick={signOut} icon={faRightFromBracket} size='lg' />
                             </div>
                         </div>
                             
@@ -36,7 +44,7 @@ const Navbar = () => {
                 </div>
             </nav>
             <nav className={classes.bottomNavbar}>
-                {currentUser && <Link className={classes.bottomNavbarLink} href='/calculator'><FontAwesomeIcon icon={faBowlFood} size='lg' /><p>MyFood</p></Link>}
+                {currentUser && <Link className={classes.bottomNavbarLink} href='/myFood'><FontAwesomeIcon icon={faBowlFood} size='lg' /><p>Add Food</p></Link>}
                 <Link className={classes.bottomNavbarLink} href='/recipes'><FontAwesomeIcon icon={faUtensils} size='lg' /><p>Recipes</p></Link>
                 <Link className={classes.bottomNavbarLink} href='/exercise'><FontAwesomeIcon icon={faDumbbell} size='lg' /><p>Exercises</p></Link>
                 <Link className={classes.bottomNavbarLink} href='/calculator'><FontAwesomeIcon icon={faCalculator} size='lg' /><p>Calculator</p></Link>

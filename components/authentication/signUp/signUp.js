@@ -26,14 +26,7 @@ const SignUp = () => {
 
         try {
             const { user } = await createAuthUserWithEmailandPassword(email, password)
-            const userObj = {}
-            const createdDate = new Date()
-            if (user) {
-                userObj.name = name
-                userObj.email = email
-                userObj.createdAt = createdDate
-            }
-            await createUserDocumentFromAuth(user, userObj )
+            await createUserDocumentFromAuth(user)
             if (user) {
                 router.push('/')
             }
