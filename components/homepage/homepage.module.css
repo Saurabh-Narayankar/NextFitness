@@ -1,6 +1,164 @@
 .homepageContainer {
     display: flex;
-    border: 1px solid red;
-    height: 70vh;
+    justify-content: center;
     width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.homepageInnerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 95%;
+    height: auto;
+}
+
+.homepageHeroSec {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.homepageHeroSecHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background-color: #bcf8aa;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+.homepageHeroSecInnerHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+}
+
+.homepageHeroSecInnerHeading p {
+    font-size: 5.5rem;
+    text-align: center;
+    word-spacing: 0.5rem;
+    font-weight: bold;
+    color: #39c90d;
+}
+
+.homepageHeroSecImage {
+    width: 55%;
+    height: 100%;
+}
+
+.fitnessImage {
+    width: 100%;
+    height: 100%;
+}
+
+.homepageFeatureSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #39c90d;
+    padding-top: 1rem;
+    margin-bottom: 3rem;   
+}
+
+.homepageFeatureSec h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.homepageFeatureSecInner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+    width: 75%;
+    height: auto;
+}
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+
+    .homepageHeroSecInnerHeading p {
+        font-size: 5rem;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .homepageHeroSecInnerHeading p {
+        font-size: 4rem;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+    .homepageHeroSec {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .homepageHeroSecHeading {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .homepageHeroSecImage {
+        width: 100%;
+        height: 500px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .homepageHeroSecInnerHeading p {
+        font-size:3.5rem;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .homepageInnerContainer {
+        width: 95%;
+    }
+
+    .homepageHeroSecInnerHeading p {
+        font-size:2.5rem;
+    }
+
+    .homepageFeatureSecInner {
+        width: 90%;
+    }
+
 }

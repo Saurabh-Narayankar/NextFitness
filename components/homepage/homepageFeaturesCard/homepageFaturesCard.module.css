@@ -1,0 +1,69 @@
+.homepageFeaturesCardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 350px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+}
+
+.homepageFeaturesCardTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: #bcf8aa;
+    border-radius: 1rem;
+}
+
+.homepageFeaturesCardTitle p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.homepageFeaturesCardDescription {
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+}
+
+.homepageFeaturesCardDescription ul {
+    margin-left: 1rem;
+}
+
+.homepageFeaturesCardDescription li {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+
+    .homepageFeaturesCardContainer {
+        width: 700px;
+        height: 350px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .homepageFeaturesCardContainer {
+        width: 500px;
+        height: 400px;
+    }
+
+    .homepageFeaturesCardDescription li {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+}
