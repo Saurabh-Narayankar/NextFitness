@@ -25,12 +25,6 @@ const ExerciseHomepage = () => {
     useEffect(() => {
         const Abductors = async () => {
 
-            // firestore code
-            /* const colRef = collection(db, 'exercises/abductors/abductorsExercises' )
-            const snapshots = await getDocs(colRef)
-            const abductorExercise = snapshots.docs.map(doc => doc.data())
-            setExercises(abductorExercise) */
-
             const exercise = await fetch(`https://next-fitness-backend.vercel.app/exercise/abductors`)
             const exerciseResponse = await exercise.json()
             setExercises(exerciseResponse)
@@ -46,13 +40,6 @@ const ExerciseHomepage = () => {
     }
 
     const exerciseSelector = async (event) => {
-
-        // firestore code
-        /* const colRef = collection(db, `exercises/${event.target.value}/${event.target.value}Exercises` )
-        const snapshots = await getDocs(colRef)
-        const currentExerciseData = snapshots.docs.map(doc => doc.data())
-        setExercises(currentExerciseData) */
-        event.preventDefault()
         setLoading(true)
 
         const exercise = await fetch(`https://next-fitness-backend.vercel.app/exercise/${event.target.value}`)
@@ -68,85 +55,85 @@ const ExerciseHomepage = () => {
                 <div className={classes.exerciseHomepageFilter}>
                     <div className={classes.exerciseHomepageFilterInner}>
                         <h2>Target - Muscle</h2>
-                        <div className={classes.exerciseHomepageFilterInnerRadio}>
+                        <form className={classes.exerciseHomepageFilterInnerRadio} onChange={event => exerciseSelector(event)}>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="abductors" name="targetMuscle" value="abductors" defaultChecked={true} onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="abductors" name="targetMuscle" value="abductors" defaultChecked={true} />
                                 <label id='abductors'>Abductors</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="abs" name="targetMuscle" value="abs" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="abs" name="targetMuscle" value="abs" />
                                 <label id='abs'>Abs</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="adductors" name="targetMuscle" value="adductors" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="adductors" name="targetMuscle" value="adductors" />
                                 <label id='adductors'>Adductors</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="biceps" name="targetMuscle" value="biceps" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="biceps" name="targetMuscle" value="biceps" />
                                 <label id='biceps'>Biceps</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="calves" name="targetMuscle" value="calves" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="calves" name="targetMuscle" value="calves" />
                                 <label id='calves'>Calves</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="cardiovascular-system" name="targetMuscle" value="cardio" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="cardiovascular-system" name="targetMuscle" value="cardio" />
                                 <label id='cardiovascular-system'>Cardio</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="delts" name="targetMuscle" value="shoulders" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="delts" name="targetMuscle" value="shoulders" />
                                 <label id='delts'>Shoulders</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="forearms" name="targetMuscle" value="forearms" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="forearms" name="targetMuscle" value="forearms" />
                                 <label id='forearms'>Forearms</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="glutes" name="targetMuscle" value="glutes" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="glutes" name="targetMuscle" value="glutes" />
                                 <label id='glutes'>Glutes</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="hamstrings" name="targetMuscle" value="hamstrings" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="hamstrings" name="targetMuscle" value="hamstrings" />
                                 <label id='hamstrings'>Hamstrings</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="lats" name="targetMuscle" value="lats" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="lats" name="targetMuscle" value="lats" />
                                 <label id='lats'>Lats</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="levator-scapulae" name="targetMuscle" value="neck" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="levator-scapulae" name="targetMuscle" value="neck" />
                                 <label id='levator-scapulae'>Levator-Scapulae</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="pectorals" name="targetMuscle" value="chest" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="pectorals" name="targetMuscle" value="chest" />
                                 <label id='pectorals'>Chest</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="quads" name="targetMuscle" value="quads" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="quads" name="targetMuscle" value="quads" />
                                 <label id='quads'>Quads</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="serratus-anterior" name="targetMuscle" value="serratusAnterior" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="serratus-anterior" name="targetMuscle" value="serratusAnterior" />
                                 <label id='serratus-anterior'>Serratus-Anterior</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="spine" name="targetMuscle" value="spine" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="spine" name="targetMuscle" value="spine" />
                                 <label id='spine'>Spine</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="traps" name="targetMuscle" value="traps" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="traps" name="targetMuscle" value="traps" />
                                 <label id='traps'>Traps</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="triceps" name="targetMuscle" value="triceps" onChange={event => exerciseSelector(event)} />
+                                <input type="radio" id="triceps" name="targetMuscle" value="triceps" />
                                 <label id='triceps'>Triceps</label>
                             </div>
                             <div className={classes.exerciseRadio}>
-                                <input type="radio" id="upper-back" name="targetMuscle" value="upperBack" onChange={event => exerciseSelector(event)}  />
+                                <input type="radio" id="upper-back" name="targetMuscle" value="upperBack"  />
                                 <label id='upper-back'>Upper-Back</label>
                             </div>
 
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <div className={classes.exerciseHomepageContent}>
