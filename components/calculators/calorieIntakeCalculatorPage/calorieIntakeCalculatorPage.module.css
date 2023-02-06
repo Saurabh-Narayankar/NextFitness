@@ -410,4 +410,20 @@
         display: flex;
         gap: 2rem;
     }
+
+    .calorieIntakeDescription {
+        font-size: 1.05rem;
+    }
+
+    .calorieIntakeTableQuantities label {
+        font-size: 1rem;
+    }
+
+    .calorieIntakeEquations p {
+        font-size: 1.1rem;
+    }
+
+    .risks {
+        font-size: 1rem;
+    }
 }

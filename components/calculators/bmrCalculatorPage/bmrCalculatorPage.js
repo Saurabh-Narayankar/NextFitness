@@ -138,7 +138,7 @@ const BmrCalculatorPage = () => {
                     </div>
                     )}
                     <div className={classes.bmrEquations}>
-                        <p>Different formulas for BMR Calculation : [Out of which Miffin-St jeor equation is most accurate]</p>
+                        <p><b>Different formulas for BMR Calculation : [Out of which Miffin-St jeor equation is most accurate]</b></p>
                         <div className={classes.bmrCalFormula}>
                             <p className={classes.bmrCalFormulaTitle}>Mifflin-St Jeor Equation: [USING THIS FOR OUR CALCULATION]</p>
                             <p>For men: BMR = 10W + 6.25H - 5A + 5</p>

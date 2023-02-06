@@ -215,8 +215,7 @@
     width: 100%;
     text-align: center;
     border-radius: 0.5rem;
-    margin-bottom: 0.5rem;
-    
+    margin-bottom: 0.5rem;   
 }
 
 .bmrEquations .bmrCalFormula {
@@ -335,4 +334,22 @@
         justify-content: left;
         align-items: center;
     }
+
+    .BMRDescription {
+        font-size: 1.05rem;
+    }
+
+    .bmrTableQuantities label {
+        font-size: 1rem;
+    }
+
+    .bmrEquations p {
+        font-size: 1.1rem;
+    }
+
+    .risks {
+        font-size: 1rem;
+    }
+
+
 }

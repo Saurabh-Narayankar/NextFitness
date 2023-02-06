@@ -1,5 +1,4 @@
 .BmiCalculatorPageContainer {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +22,6 @@
 }
 
 .BmiCalculatorPageInnerContainer {
-    /* border: 1px solid orange; */
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -308,6 +306,11 @@
 
 
 
+
+
+
+
+
 @media screen and (max-width: 1000px) {
 
     .BmiCalculatorPageInnerContainer {
@@ -368,4 +371,32 @@
         display: flex;
         gap: 2rem;
     }
+
+
+
+    .BMIDescription {
+        font-size: 1.05rem;
+    }
+
+    .bmiTableQuantities label {
+        font-size: 1rem;
+    }
+
+    .bmiAverageValues .averageForMen p {
+        font-size: 1.3rem;
+    }
+    
+    .bmiAverageValues .averageForChild p {
+        font-size: 1.3rem;
+    }
+
+    .bmiAverageValues th {
+        font-size: 1.1rem;
+    }
+
+    .risks {
+        font-size: 1rem;
+    }
+
+
 }

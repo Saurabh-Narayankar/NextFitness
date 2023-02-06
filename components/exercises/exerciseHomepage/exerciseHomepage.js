@@ -29,10 +29,8 @@ const ExerciseHomepage = () => {
             const exerciseResponse = await exercise.json()
             setExercises(exerciseResponse)
             setLoading(false)
-
         }
         Abductors()
-
     }, []);
 
     if (!exercises) {
@@ -46,7 +44,6 @@ const ExerciseHomepage = () => {
         const exerciseResponse = await exercise.json()
         setExercises(exerciseResponse)
         setLoading(false)
-
     }
 
     return (
@@ -132,7 +129,6 @@ const ExerciseHomepage = () => {
                                 <input type="radio" id="upper-back" name="targetMuscle" value="upperBack"  />
                                 <label id='upper-back'>Upper-Back</label>
                             </div>
-
                         </form>
                     </div>
                 </div>

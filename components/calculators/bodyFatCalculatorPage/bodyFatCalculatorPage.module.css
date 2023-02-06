@@ -387,4 +387,24 @@
     .measureBodyFatDescription ul {
         margin-left: 2rem;
     }
+
+    .bodyFatDescription {
+        font-size: 1.05rem;
+    }
+
+    .bodyFatTableQuantities label, .bodyFatTableQuantities legend {
+        font-size: 1rem;
+    }
+
+    .bodyFatAverageValues .averageForMen p {
+        font-size: 1.3rem;
+    }
+    
+    .bodyFatAverageValues .averageForChild p {
+        font-size: 1.3rem;
+    }
+
+    .risks {
+        font-size: 1rem;
+    }
 }
