@@ -103,10 +103,10 @@
 }
 
 .logInButton button {
-    border: 1px solid green;
+    border: 2px solid green;
     border-radius: 0.5rem;
-    width: 50%;
-    height: 50%;
+    width:25%;
+    height: 45%;
     font-size: 1.2rem;
     background: linear-gradient(90deg, #2dbb3e, transparent) #9CFF2E;
 }
@@ -116,6 +116,11 @@
     transition: 300ms;
     color: white;
     cursor: pointer;
+}
+
+.RegisterLink{
+    text-decoration: underline;
+    font-size: 1.1rem;
 }
 
 

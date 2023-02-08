@@ -72,7 +72,7 @@ const SignUp = () => {
                                         <input type='password' id="password" name="password" required />
                                     </div>
                                     <div>
-                                        <label id="confirmPassword">Confirm Pyarn devassword</label>
+                                        <label id="confirmPassword">Confirm Password</label>
                                         <input type='password' id="confirmPassword" name="confirmPassword" required />
                                     </div>
                                 </div>

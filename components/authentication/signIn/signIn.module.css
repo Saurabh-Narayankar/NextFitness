@@ -98,10 +98,10 @@
 }
 
 .logInButton button {
-    border: 1px solid green;
+    border: 2px solid green;
     border-radius: 0.5rem;
-    width: 50%;
-    height: 90%;
+    width: 25%;
+    height: 80%;
     font-size: 1.2rem;
     background: linear-gradient(90deg, #2dbb3e, transparent) #9CFF2E;
 }
@@ -130,15 +130,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    width: 50%;
-    height: 50%;
-    border-radius: 0.5rem;
-    background: linear-gradient(90deg, #2dbb3e, transparent) #9CFF2E;
+    border: 2px solid green;
+    width: 10%;
+    height: 60%;
+    border-radius: 50%;
 }
 
 .logInOtherMethodsButton:hover {
-    background-color: #208e2d;
+    background-color: #24ca37;
     transition: 300ms;
     color: white;
     cursor: pointer;
@@ -156,6 +155,7 @@
 .RegisterLink {
     text-decoration: underline;
     color: #208e2d;
+    font-size: 1.1rem;
 }
 
 
