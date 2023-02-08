@@ -1,5 +1,4 @@
 .foodHomepageContainer {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     width: 100%;
@@ -9,7 +8,6 @@
 }
 
 .foodHomepageInnerContainer {
-    /* border: 1px solid orange; */
     display: flex;
     flex-direction: column;
     gap: 20px;

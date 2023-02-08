@@ -86,7 +86,6 @@ const RecipeDetailComp = ({ cuisine, course, id }) => {
                     <div className={classes.recipeInstructions}>
                         <p>Cooking Instructions</p>
                         <ul className={classes.instructionList}>
-                            {/* conditional check in map because every instruction array has the last value of it as empty string so if the condition is not checked then extra <li></li> gets created with no value {check any document of a recipe in database recipes for more info} */}
                             {recipe.instructions.map((instruction, index) => {return instruction.length !== 0 ? <li className={classes.instructionItem} key={index}>{instruction}</li> : <p>{``}</p>})}
                         </ul>
                     </div>

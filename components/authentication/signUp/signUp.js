@@ -15,7 +15,6 @@ const SignUp = () => {
         event.preventDefault();
 
         const email = event.target.email.value
-        const name = event.target.name.value
         const password = event.target.password.value
         const confirmPassword = event.target.confirmPassword.value
 
