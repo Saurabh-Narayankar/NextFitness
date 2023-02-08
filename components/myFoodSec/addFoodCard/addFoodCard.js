@@ -131,5 +131,3 @@ const AddFoodCard = ({ item, meal, date }) => {
 }
 
 export default AddFoodCard;
-
-{/* <p style={{marginBottom: '20px'}}>{item.fields.item_name}, {item.fields.nf_calories} kcal, {item.fields.nf_total_fat}gms, {item.fields.nf_total_carbohydrate}gms, {item.fields.nf_protein} gms, {item.fields.nf_serving_weight_grams} gms</p> */}

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import classes from './signUp.module.css'
 
-import { createAuthUserWithEmailandPassword, createUserDocumentFromAuth, auth } from "../../../lib/firebase";
+import { createAuthUserWithEmailandPassword, createUserDocumentFromAuth } from "../../../lib/firebase";
 import SignUpImg from '../../../assets/signUp.svg'
 
 

@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import classes from './bmrCalculatorPage.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 const BmrCalculatorPage = () => {
 

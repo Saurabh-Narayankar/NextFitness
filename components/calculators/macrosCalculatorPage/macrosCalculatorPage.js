@@ -246,7 +246,7 @@ const MacrosCalculatorPage = () => {
                     </div>
                     )}
                     <div className={classes.calorieIntakeEquations}>
-                        <p>{/* Different formulas for BMR Calculation : [Out of which Miffin-St jeor equation is most accurate] */}To calculate macros, calculating AMR (Actual Metabolic Rate) is neccessary and it is calculated by following equations</p>
+                        <p>To calculate macros, calculating AMR (Actual Metabolic Rate) is neccessary and it is calculated by following equations</p>
                         <div className={classes.calorieIntakeCalFormula}>
                             <p className={classes.calorieIntakeCalFormulaTitle}>Mifflin-St Jeor Equation: [USING THIS FOR OUR CALCULATION]</p>
                             <p>For men: BMR = 10W + 6.25H - 5A + 5</p>
