@@ -1,5 +1,6 @@
 import { useEffect, useContext, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 
 import { doc, setDoc, getDoc } from 'firebase/firestore'
 import { UserContext } from '../../../context/userContext'
@@ -11,6 +12,8 @@ import FoodItemCard from './foodItemCard/foodItemCard';
 
 const MyFoodHomepage = () => {
 
+    const router = useRouter()
+
     const { currentUser } = useContext(UserContext)
 
     const [foodData, setFoodData] = useState([])
@@ -20,45 +23,49 @@ const MyFoodHomepage = () => {
 
     useEffect(() => {
 
-        const foodDataTemplateObj = {
-            breakfast: [],
-            lunch: [],
-            dinner: [],
-            snacks: [],
-            totalCalories: 0,
-            totalCarb: 0,
-            totalProtein: 0,
-            totalfat: 0
+        if (!currentUser) {
+            router.push('/authenticate/signInPage')
+        } else {
+            const foodDataTemplateObj = {
+                breakfast: [],
+                lunch: [],
+                dinner: [],
+                snacks: [],
+                totalCalories: 0,
+                totalCarb: 0,
+                totalProtein: 0,
+                totalfat: 0
+            }
+    
+            const createFoodDataForGivenDay = async () => {
+    
+                if (!currentUser) {
+                    return;
+                }
+                const foodDataRef = doc(db, `users/${currentUser.uid}/foodData`, day)
+                const foodDataSnapshot = await getDoc(foodDataRef)
+    
+                if (!foodDataSnapshot.exists()) {
+                    try {
+                        await setDoc(foodDataRef, foodDataTemplateObj);
+                    } catch (error) {
+                        console.log(error);
+                        
+                    }
+                } else {
+                    try {
+                        const foodDataFromDatabase = foodDataSnapshot.data()
+                        setFoodData(foodDataFromDatabase)
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            }
+    
+            createFoodDataForGivenDay()
         }
 
-        const createFoodDataForGivenDay = async () => {
-
-            if (!currentUser) {
-                return;
-            }
-            const foodDataRef = doc(db, `users/${currentUser.uid}/foodData`, day)
-            const foodDataSnapshot = await getDoc(foodDataRef)
-
-            if (!foodDataSnapshot.exists()) {
-                try {
-                    await setDoc(foodDataRef, foodDataTemplateObj);
-                } catch (error) {
-                    console.log(error);
-                    
-                }
-            } else {
-                try {
-                    const foodDataFromDatabase = foodDataSnapshot.data()
-                    setFoodData(foodDataFromDatabase)
-                } catch (error) {
-                    console.log(error);
-                }
-            }
-        }
-
-        createFoodDataForGivenDay()
-
-    }, [currentUser, day])
+    }, [currentUser, day, router])
 
     return (
         <>
